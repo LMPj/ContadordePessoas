@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:screenOrientation="portrait"
+    tools:context=".MainActivity">
+
+    //imagem de fundo (gif) | Background
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/gifImageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gifbck"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-358dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+
+    //Botões Feminino
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-30dp">
+
+        <Button
+            android:id="@+id/btnone"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="37dp"
+            android:layout_marginTop="111dp"
+            android:background="@drawable/iconwoman" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <Button
+                android:id="@+id/btntwo"
+                android:layout_width="101dp"
+                android:layout_height="101dp"
+                android:layout_alignEnd="@+id/btnone"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="41dp"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/iconkidgirl" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnthree"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnone"
+            android:layout_marginBottom="99dp"
+            android:background="@drawable/iconoldwoman" />
+
+    </RelativeLayout>
+
+    //Botões Masculino
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="-30dp">
+
+        <Button
+            android:id="@+id/btnfour"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="37dp"
+            android:layout_marginTop="111dp"
+            android:background="@drawable/iconmen" />
+
+        <Button
+            android:id="@+id/btnfive"
+            android:layout_width="101dp"
+            android:layout_height="101dp"
+            android:layout_alignStart="@+id/btnfour"
+            android:layout_centerVertical="true"
+            android:background="@drawable/iconkidboy" />
+
+        <Button
+            android:id="@+id/btnsix"
+            android:layout_width="106dp"
+            android:layout_height="103dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/btnfour"
+            android:layout_marginBottom="106dp"
+            android:background="@drawable/iconoldmen" />
+
+    </RelativeLayout>
+
+
+    // Total
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txttotal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="TOTAL"
+            android:textColor="#e70707"
+            android:textSize="32sp" />
+        //zerofinal
+
+        <TextView
+            android:id="@+id/zerofinal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txttotal"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="monospace"
+            android:text="0"
+            android:textColor="#e70707"
+            android:textSize="26sp" />
+
+    </RelativeLayout>
+    //Adultos | adult
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtadult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:fontFamily="monospace"
+            android:text="ADULTOS"
+            android:textColor="#e70707" />
+        //zeroadult
+
+        <TextView
+            android:id="@+id/zeroadult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtadult"
+            android:layout_centerHorizontal="true"
+            android:text="0"
+            android:textColor="#e70707" />
+
+    </RelativeLayout>
+
+
+    // Idosos | Elderly
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/txtelderly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="172dp"
+            android:fontFamily="monospace"
+            android:text="IDOSOS"
+            android:textColor="#e70707" />
+
+        //zeroelderly
+
+        <TextView
+            android:id="@+id/zeroelderly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtelderly"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="-172dp"
+            android:text="0"
+            android:textColor="#e70707" />
+
+    </RelativeLayout>
+
+
+    // Texto dos botões | Button text
+
+    // Mulheres | Womens
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Mulheres"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="214dp"
+            android:text="Mulheres"
+            android:textColor="#e70707" />
+    </RelativeLayout>
+
+    // Meninas | Girls
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="33dp"
+            android:layout_marginTop="59dp"
+            android:text="Meninas"
+            android:textColor="#e70707" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="83dp"
+            android:layout_marginStart="39dp"
+            android:text="Idosas"
+            android:textColor="#e70707" />
+
+    </RelativeLayout>
+
+    //txt homen
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/Homens"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="214dp"
+            android:text="Homens"
+            android:textColor="#e70707" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="83dp"
+            android:layout_marginEnd="39dp"
+            android:text="Idosos"
+            android:textColor="#e70707" />
+
+    </RelativeLayout>
+
+    //kids
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="CRIANÇAS"
+        android:textColor="#e70707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+
+    //zerokids
+
+    <TextView
+        android:id="@+id/zerokids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="0"
+        android:textColor="#e70707"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/relativeLayout2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.477" />
+
+    //txt menino
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="right">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="37dp"
+            android:layout_marginTop="60dp"
+            android:text="Meninos"
+            android:textColor="#e70707" />
+
+    </LinearLayout>
+
+
+    //Numeros btn extra
+
+    //zerowoman
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="50dp">
+
+        //zerowomen
+
+        <TextView
+            android:id="@+id/zerowoman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="232dp"
+            android:text="0"
+            android:textColor="#e70707" />
+
+
+        //zerogirl
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/zerogirl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentStart="true"
+                android:layout_gravity="center"
+                android:layout_marginStart="58dp"
+                android:layout_marginTop="74dp"
+                android:text="0"
+                android:textColor="#e70707" />
+        </LinearLayout>
+
+        //zeroeldery
+
+        <TextView
+            android:id="@+id/zerooldw"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="68dp"
+            android:layout_marginStart="57dp"
+            android:text="0"
+            android:textColor="#e70707" />
+
+        //zeroman
+
+        <TextView
+            android:id="@+id/zeroman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/zerowoman"
+            android:layout_marginEnd="58dp"
+            android:text="0"
+            android:textColor="#e70707" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            //zeroboy
+
+            <TextView
+                android:id="@+id/zeroboy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="59dp"
+                android:layout_marginTop="75dp"
+                android:text="0"
+                android:textColor="#e70707" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right">
+
+            <TextView
+                android:id="@+id/zerooldm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="34dp"
+                android:layout_marginRight="55dp"
+                android:text="0"
+                android:textColor="#e70707" />
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</android.support.constraint.ConstraintLayout>
