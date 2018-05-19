@@ -1,8 +1,7 @@
-"# ContadorPessoas" 
-"# ContadorPessoas" 
+# ContadorPessoas.
 
-## Download on GooglePlay:
-https://tinyurl.com/y6u46mbk
+
+## Download on GooglePlay: https://tinyurl.com/y6u46mbk
 
 ### Screenshots:
 
